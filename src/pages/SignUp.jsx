@@ -24,7 +24,9 @@ class SignUp extends React.Component {
                     <input type="password" className="form-control border border-dark shadow-sm" id="passwordConfirmation" placeholder="Insira a senha novamente..." required></input>
                     <label for="passwordConfirmation">Confirmar senha</label>
                     <br />
-                    <a href="#loginform" className="link-dark text-decoration-none">Já possui uma conta? Entre.</a>
+                    <div>
+                        Já possui uma conta? <a href="/login" className="link-dark">Entre.</a>
+                    </div>
                 </div>
                 <div className="text-center">
                     <button type="submit" className="btn btn-outline-dark mb-3 shadow-lg">Cadastrar</button>

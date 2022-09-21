@@ -10,12 +10,12 @@ class RecoverPassword extends React.Component {
                 </div>
                 <div className="form-floating m-3">
                     <input type="password" className="form-control border border-dark" id="password" placeholder="Insira a senha..."></input>
-                    <label for="password">E-mail cadastrado</label>
+                    <label for="password">E-mail</label>
                     <br />
                     <div>
-                        <a href="#loginform" className="link-dark text-decoration-none">Entre </a>
+                        <a href="/login" className="link-dark">Entre </a>
                         ou
-                        <a href="#signupform" className="link link-dark text-decoration-none"> cadastre-se.</a>
+                        <a href="/sign-up" className="link link-dark"> cadastre-se.</a>
                     </div>
                 </div>
                 <div className="text-center">
