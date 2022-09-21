@@ -27,7 +27,7 @@ class SignUp extends React.Component {
                     <a href="#loginform" className="link-dark text-decoration-none">Já possui uma conta? Entre.</a>
                 </div>
                 <div className="text-center">
-                    <button type="submit" className="btn btn-outline-dark mb-3 shadow-lg">Entrar</button>
+                    <button type="submit" className="btn btn-outline-dark mb-3 shadow-lg">Cadastrar</button>
                 </div>
             </form>
         );
