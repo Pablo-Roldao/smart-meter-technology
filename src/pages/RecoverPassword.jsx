@@ -10,7 +10,7 @@ class RecoverPassword extends React.Component {
                     <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded" />
                 </div>
                 <div className="form-floating m-3">
-                    <input type="password" className="form-control border border-dark" id="password" placeholder="Insira a senha..." required></input>
+                    <input type="email" className="form-control border border-dark" id="password" placeholder="Insira a senha..." required></input>
                     <label for="password">E-mail</label>
                     <br />
                     <div>
