@@ -15,7 +15,7 @@ class Home extends React.Component {
                         <Link to="/recover-password">Recuperar senha</Link>
                     </li>
                     <li>
-                        <a href="/sign-up">Cadastrar</a>
+                        <Link to="/sign-up">Cadastrar</Link>
                     </li>
                 </ul>
             </>

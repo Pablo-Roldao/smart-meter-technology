@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class SignUp extends React.Component {
 
     render() {
         return (
-            <form className="container w-75 rounded p-5" method="post" action="#home">
+            <form className="container w-75 rounded p-5" method="post" action="/sign-up-submit">
                 <div className="text-center w-100">
                     <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded" />
                 </div>
@@ -25,7 +26,7 @@ class SignUp extends React.Component {
                     <label for="passwordConfirmation">Confirmar senha</label>
                     <br />
                     <div>
-                        Já possui uma conta? <a href="/login" className="link-dark">Entre.</a>
+                        Já possui uma conta? <Link to="/login" className="link link-dark">Entre.</Link>
                     </div>
                 </div>
                 <div className="text-center">
