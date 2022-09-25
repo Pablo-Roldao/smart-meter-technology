@@ -7,7 +7,9 @@ class SignUp extends React.Component {
         return (
             <form className="container w-75 rounded p-5" method="post" action="/sign-up-submit">
                 <div className="text-center w-100">
-                    <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded" />
+                    <Link to="/">
+                        <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded" />
+                    </Link>
                 </div>
                 <div className="form-floating m-3">
                     <input type="text" className="form-control border border-dark shadow-sm" id="name" placeholder="Insira seu nome..." required></input>
