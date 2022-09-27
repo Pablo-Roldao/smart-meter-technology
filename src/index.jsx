@@ -9,6 +9,8 @@ import RecoverPassword from "./pages/RecoverPassword";
 import SignUp from "./pages/SignUp";
 import Places from "./pages/Places";
 
+import "./index.css"
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
