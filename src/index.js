@@ -4,36 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from "./App";
 import Home from "./pages/Home";
-import Login from './pages/Login';
-import RecoverPassword from './pages/RecoverPassword';
-import SignUp from './pages/SignUp';
-
-/*const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-        <Home />
-    ),
-  },
-  {
-    path: "/login",
-    element: (
-      <Login />
-    )
-  },
-  {
-    path: "/recover-password",
-    element: (
-      <RecoverPassword />
-    )
-  },
-  {
-    path: "/sign-up",
-    element: (
-      <SignUp />
-    )
-  },
-]);*/
+import Login from "./pages/Login";
+import RecoverPassword from "./pages/RecoverPassword";
+import SignUp from "./pages/SignUp";
+import Places from "./pages/Places";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -44,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/login" element={<Login />} />
           <Route path="/recover-password" element={<RecoverPassword />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="places" element={<Places />} />
         </Route>
       </Routes>
     </BrowserRouter>
