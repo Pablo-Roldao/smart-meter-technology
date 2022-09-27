@@ -7,7 +7,7 @@ class Login extends React.Component {
             <form className="container w-75 rounded p-5" method="post" action="/submit-login">
                 <div className="text-center w-100">
                     <Link to="/">
-                        <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded" />
+                        <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded w-25" />
                     </Link>
                 </div>
                 <div className="form-floating m-3">
