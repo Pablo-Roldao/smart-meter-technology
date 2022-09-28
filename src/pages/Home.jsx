@@ -18,7 +18,7 @@ class Home extends React.Component {
                         <Link to="/sign-up">Cadastrar</Link>
                     </li>
                     <li>
-                        <Link to="/places">Lugares</Link>
+                        <Link to="/places">Meus locais</Link>
                     </li>
                 </ul>
             </>
