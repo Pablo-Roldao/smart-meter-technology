@@ -17,24 +17,28 @@ class Place extends React.Component {
                             </div>
                             <div className="col-4">
                                 <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-on" viewBox="0 0 16 16">
-                                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-                                    </svg> Pasteurização - 5,05kw
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
+                                    </div>
                                 </p>
                                 <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-off" viewBox="0 0 16 16">
-                                        <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
-                                    </svg> Linha de envase - 0,00kw
+                                    <div className="form-check form-switch">
+                                        <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                        <label className="form-check-label" for="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
+                                    </div>
                                 </p>
                                 <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-on" viewBox="0 0 16 16">
-                                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-                                    </svg> Sala de refrigeração - 6,52kw
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
+                                    </div>
                                 </p>
                                 <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-on" viewBox="0 0 16 16">
-                                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-                                    </svg> Escritório - 3,48kw
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Escritório - 3,48kw</label>
+                                    </div>
                                 </p>
                             </div>
                             <div className="col-4">
@@ -62,20 +66,23 @@ class Place extends React.Component {
                                 <p className="text-center">Sensores cadastrados</p>
                             </div>
                             <div className="col-4">
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-on" viewBox="0 0 16 16">
-                                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-                                    </svg> Pasteurização - 5,05kw
+                            <p>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
+                                    </div>
                                 </p>
                                 <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-off" viewBox="0 0 16 16">
-                                        <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
-                                    </svg> Linha de envase - 0,00kw
+                                    <div className="form-check form-switch">
+                                        <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                        <label className="form-check-label" for="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
+                                    </div>
                                 </p>
                                 <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-toggle-on" viewBox="0 0 16 16">
-                                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-                                    </svg> Sala de refrigeração - 6,52kw
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
+                                    </div>
                                 </p>
                             </div>
                             <div className="col-4">
