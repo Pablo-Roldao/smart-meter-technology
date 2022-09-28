@@ -16,30 +16,22 @@ class Place extends React.Component {
                                 <p className="text-center">Sensores cadastrados</p>
                             </div>
                             <div className="col-4">
-                                <p>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
-                                    </div>
-                                </p>
-                                <p>
-                                    <div className="form-check form-switch">
-                                        <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                                        <label className="form-check-label" for="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
-                                    </div>
-                                </p>
-                                <p>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
-                                    </div>
-                                </p>
-                                <p>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Escritório - 3,48kw</label>
-                                    </div>
-                                </p>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
+                                </div>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
+                                </div>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
+                                </div>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Escritório - 3,48kw</label>
+                                </div>
                             </div>
                             <div className="col-4">
                                 <h6 className="text-center">Demanda atual</h6>
@@ -66,24 +58,18 @@ class Place extends React.Component {
                                 <p className="text-center">Sensores cadastrados</p>
                             </div>
                             <div className="col-4">
-                            <p>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
-                                    </div>
-                                </p>
-                                <p>
-                                    <div className="form-check form-switch">
-                                        <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                                        <label className="form-check-label" for="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
-                                    </div>
-                                </p>
-                                <p>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
-                                    </div>
-                                </p>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
+                                </div>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
+                                </div>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                    <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
+                                </div>
                             </div>
                             <div className="col-4">
                                 <h6 className="text-center">Demanda atual</h6>
