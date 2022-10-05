@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Place extends React.Component {
     render() {
@@ -6,7 +7,7 @@ class Place extends React.Component {
             <>
                 <div className="card w-75 p-3 m-3 shadow-lg border-dark">
                     <div className="card-body">
-                        <h5 className="card-title text-center text-uppercase">Fábrica 01</h5>
+                        <Link to="/factory-monitoring" className="card-title text-center text-uppercase text-decoration-none link-dark"><h5>Fábrica 01</h5></Link>
                         <br />
                         <div className="row">
                             <div className="col-4">
@@ -17,7 +18,7 @@ class Place extends React.Component {
                             </div>
                             <div className="col-4">
                                 <div className="form-check form-switch">
-                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
                                     <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
                                 </div>
                                 <div className="form-check form-switch">
@@ -25,11 +26,11 @@ class Place extends React.Component {
                                     <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
                                 </div>
                                 <div className="form-check form-switch">
-                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
                                     <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Sala de refrigeração - 6,52kw</label>
                                 </div>
                                 <div className="form-check form-switch">
-                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
                                     <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Escritório - 3,48kw</label>
                                 </div>
                             </div>
