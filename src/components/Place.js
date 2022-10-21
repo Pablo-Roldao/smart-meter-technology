@@ -1,6 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const Place = (props) => {
+
+    const placeData = props.placeData;
+    const sensorsData = placeData.sensors.map((sensor) => {
+        return(
+            <>
+                <div key={sensor.id}>
+
+                </div>
+                <p>Name: {sensor.name}</p>
+                <p>Id: {sensor.id}</p>
+                <p>Value: {sensor.value}</p>
+            </>
+        );
+    });
+
+    return (
+        <>
+            <div className="card">
+                <div className="card-body">
+                    <Link to={"/factory-monitoring?id=" + placeData.id}>{placeData.name}</Link>
+                    {sensorsData}
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default Place;
+
+/*import React from "react";
+import { Link } from "react-router-dom";
+
 class Place extends React.Component {
     render() {
         return (
@@ -22,7 +55,7 @@ class Place extends React.Component {
                                     <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Pasteurização - 5,05kw</label>
                                 </div>
                                 <div className="form-check form-switch">
-                                    <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        ~            <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                                     <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Linha de envase - 0,00kw</label>
                                 </div>
                                 <div className="form-check form-switch">
@@ -35,20 +68,12 @@ class Place extends React.Component {
                                 </div>
                             </div>
                             <div className="col-4">
-                                <h6 className="text-center">Demanda atual</h6>
+                        ~        <h6 className="text-center">Demanda atual</h6>
                                 <div className="row">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" className="bi bi-lightning-fill col" viewBox="0 0 16 16">
                                         <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
                                     </svg>
-                                    <h2 className=" text-start col-9">15,05 kw
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card w-75 p-3 m-3 shadow-lg border-dark">
-                    <div className="card-body">
+                        ~ className="card-body">
                         <h5 className="card-title text-center text-uppercase">Fábrica 02</h5>
                         <br />
                         <div className="row">
@@ -90,4 +115,4 @@ class Place extends React.Component {
     }
 }
 
-export default Place;
+export default Place;*/
