@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export class NewMeasurement extends Component {
-  render() {
-    return (
-      <div>NewMeasurement</div>
-    )
-  }
+const NewMeasurement = () => {
+  return (
+    <>
+      NewMeasurement
+    </>
+  );
 }
 
 export default NewMeasurement;

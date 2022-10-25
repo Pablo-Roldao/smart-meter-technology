@@ -12,14 +12,14 @@ class Login extends React.Component {
                 </div>
                 <div className="form-floating m-3">
                     <input type="email" className="form-control border border-dark" id="email" placeholder="Insira seu e-mail..." required></input>
-                    <label for="email">E-mail</label>
+                    <label htmlFor="email">E-mail</label>
                     <div>
                         Não possui uma conta? <Link to="/sign-up" className="link link-dark">Cadastre-se</Link>
                     </div>
                 </div>
                 <div className="form-floating m-3">
                     <input type="password" className="form-control border border-dark" id="password" placeholder="Insira a senha..." required></input>
-                    <label for="password">Senha</label>
+                    <label htmlFor="password">Senha</label>
                     <div>
                         Esqueceu a senha? <Link to="/recover-password" className="link link-dark">Recuperar.</Link>
                     </div>

@@ -3,16 +3,14 @@ import { Link } from "react-router-dom";
 
 const Place = (props) => {
 
-    const placeData = props.placeData;
-    const sensorsData = placeData.sensors.map((sensor) => {
-        return(
+    const sensorsData = props.placeData.sensors.map((sensor) => {
+        return (
             <>
                 <div key={sensor.id}>
-
+                    <p>Name: {sensor.name}</p>
+                    <p>Id: {sensor.id}</p>
+                    <p>Value: {sensor.value}</p>
                 </div>
-                <p>Name: {sensor.name}</p>
-                <p>Id: {sensor.id}</p>
-                <p>Value: {sensor.value}</p>
             </>
         );
     });
@@ -21,7 +19,7 @@ const Place = (props) => {
         <>
             <div className="card">
                 <div className="card-body">
-                    <Link to={"/factory-monitoring?id=" + placeData.id}>{placeData.name}</Link>
+                    <Link to={"/factory-monitoring?id=" + props.placeData.id}>{props.placeData.name}</Link>
                     {sensorsData}
                 </div>
             </div>
