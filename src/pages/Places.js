@@ -7,7 +7,6 @@ const Places = (props) => {
 
     var places = props.placesData;
 
-    //places para teste, deverão ser recebidos do banco de dados...
     const place01 = {
         name: "Fábrica A",
         id: 1,
@@ -15,11 +14,19 @@ const Places = (props) => {
             {
                 name: "Pasteurização",
                 id: 1,
+                state: 1,
                 value: 5.05
+            },
+            {
+                name: "Linha de envase",
+                id: 2,
+                state: 1,
+                value: 12.06
             },
             {
                 name: "Escritório",
                 id: 2,
+                state: 0,
                 value: 0
             }
         ],
@@ -32,11 +39,13 @@ const Places = (props) => {
             {
                 name: "Pasteurização",
                 id: 1,
-                value: 6
+                state: 1,
+                value: 8
             },
             {
                 name: "Linha de envase",
                 id: 2,
+                state: 1,
                 value: 12.06
             }
         ],
@@ -47,9 +56,10 @@ const Places = (props) => {
     const placesResult = places.map((place) => {
         return (
             <>
-                <div className="container rounded d-flex justify-content-center p-3 row">
+                <div className="container rounded d-flex justify-content-center p-3">
                     <Place placeData={place} key={place.id} />
                 </div>
+               
             </>
         );
     });

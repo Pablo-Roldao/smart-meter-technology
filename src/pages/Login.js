@@ -40,6 +40,7 @@ class Login extends React.Component {
                         <img src="./images/smt-logo.png" alt="Smart Meter Technology's Logo" className="rounded w-25" />
                     </Link>
                 </div>
+                <br />
                 <div id="emailInput" className="form-floating mb-3">
                     <input id="email" name="email" type="email" value={this.state.email} onChange={(event) => this.setEmail(event)} required placeholder="Insira seu e-mail..." className="form-control border border-dark" />
                     <label htmlFor="email">E-mail</label>

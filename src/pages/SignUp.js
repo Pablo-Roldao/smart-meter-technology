@@ -7,10 +7,10 @@ class SignUp extends React.Component {
         super(props);
 
         this.state = {
-            name: "João",
-            email: "aa@aa",
-            password: "123",
-            passwordConfirmation: "123"
+            name: "",
+            email: "",
+            password: "",
+            passwordConfirmation: ""
         }
 
         this.setName = this.setName.bind(this);
