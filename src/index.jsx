@@ -11,7 +11,12 @@ import Places from "./pages/Places";
 import FactoryMonitoring from "./pages/FactoryMonitoring";
 import NewMeasurement from "./pages/NewMeasurement";
 
-import "./index.css"
+import "./index.css";
+
+import { Amplify } from "aws-amplify";
+import awsExports from "./aws-exports";
+import SignUpConfirmation from './pages/SignUpConfirmation';
+Amplify.configure(awsExports);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/login" element={<Login />} />
           <Route path="/recover-password" element={<RecoverPassword />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="sign-up-confirmation" element={<SignUpConfirmation />}/>
           <Route path="/places" element={<Places />} />
           <Route path="/factory-monitoring" element={ <FactoryMonitoring />} />
           <Route path="/new-measurement" element={<NewMeasurement />}/>

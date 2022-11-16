@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smartmetertechnology-dev-102257-authRole",
+      "UnauthRoleArn": "arn:aws:iam::397437145815:role/amplify-smartmetertechnology-dev-102257-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::397437145815:role/amplify-smartmetertechnology-dev-102257-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-smartmetertechnology-dev-102257-deployment",
+      "UnauthRoleName": "amplify-smartmetertechnology-dev-102257-unauthRole",
+      "StackName": "amplify-smartmetertechnology-dev-102257",
+      "StackId": "arn:aws:cloudformation:sa-east-1:397437145815:stack/amplify-smartmetertechnology-dev-102257/cb7fa3b0-65b1-11ed-8ee2-06effeab04e4",
+      "AmplifyAppId": "d11qg9q4p0b6h3"
+    },
+    "categories": {
+      "auth": {
+        "smartmetertechnology559eb3b9": {}
+      }
+    }
+  }
+}

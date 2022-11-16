@@ -1,5 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
+
+import { Auth } from "aws-amplify";
 
 class SignUp extends React.Component {
 
@@ -44,13 +47,32 @@ class SignUp extends React.Component {
         });
     }
 
-    handleSubmit(event) {
-        alert("Cadastro com:" + 
-        "\nName: " + this.state.name +
-        "\nE-mail: " + this.state.email +
-        "\nSenha: " + this.state.password +
-        "\nConfrimação de senha: " + this.state.passwordConfirmation);
+    async handleSubmit(event) {
+        try {
+            const username = this.state.email;
+            const name = this.state.name;
+            const password = this.state.password;
+            const { user } = await Auth.signUp({
+                username,
+                password,
+                attributes: {
+                    name,
+                },
+                autoSignIn: {
+                    enabled: true,
+                }
+            });
+            alert(user);
+            alert("Cadastro com:" +
+            "\nName: " + this.state.name +
+            "\nE-mail: " + this.state.email +
+            "\nSenha: " + this.state.password +
+            "\nConfirmação de senha: " + this.state.passwordConfirmation);
         event.preventDefault();
+        {true && <Navigate replace to="/sign-up-confirmation"/>}
+        } catch (error) {
+            alert("Error signing up: ", error);
+        }
     }
 
     render() {
@@ -62,20 +84,20 @@ class SignUp extends React.Component {
                     </Link>
                 </div>
                 <div id="nameInput" className="form-floating m-3">
-                    <input id="name" name="name" type="text" value={this.state.name} onChange={(event) => this.setName(event)} className="form-control border border-dark shadow-sm" placeholder="Insira seu nome..." required/>
-                    <label for="name">Nome</label>
+                    <input id="name" name="name" type="text" value={this.state.name} onChange={(event) => this.setName(event)} className="form-control border border-dark shadow-sm" placeholder="Insira seu nome..." required />
+                    <label htmlFor="name">Nome</label>
                 </div>
                 <div id="emailInput" className="form-floating m-3">
-                    <input id="email" name="email" type="email" value={this.state.email} onChange={(event) => this.setEmail(event)} className="form-control border border-dark shadow-sm" placeholder="Insira seu e-mail..." required/>
-                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" value={this.state.email} onChange={(event) => this.setEmail(event)} className="form-control border border-dark shadow-sm" placeholder="Insira seu e-mail..." required />
+                    <label htmlFor="email">E-mail</label>
                 </div>
                 <div id="passwordInput" className="form-floating m-3">
-                    <input id="password" name="password" type="password" value={this.state.password} onChange={(event) => this.setPassword(event)} className="form-control border border-dark shadow-sm" placeholder="Insira a senha..." required/>
-                    <label for="password">Senha</label>
+                    <input id="password" name="password" type="password" value={this.state.password} onChange={(event) => this.setPassword(event)} className="form-control border border-dark shadow-sm" placeholder="Insira a senha..." required />
+                    <label htmlFor="password">Senha</label>
                 </div>
                 <div id="passwordConfirmationInput" className="form-floating m-3">
-                    <input id="passwordConfirmation" name="passwordConfirmation" type="password" value={this.state.passwordConfirmation} onChange={(event) => this.setPasswordConfirmation(event)} className="form-control border border-dark shadow-sm" placeholder="Insira a senha novamente..." required/>
-                    <label for="passwordConfirmation">Confirmar senha</label>
+                    <input id="passwordConfirmation" name="passwordConfirmation" type="password" value={this.state.passwordConfirmation} onChange={(event) => this.setPasswordConfirmation(event)} className="form-control border border-dark shadow-sm" placeholder="Insira a senha novamente..." required />
+                    <label htmlFor="passwordConfirmation">Confirmar senha</label>
                     <br />
                     <div>
                         Já possui uma conta? <Link to="/login" className="link link-dark">Entre.</Link>
