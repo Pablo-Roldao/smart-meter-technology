@@ -23,12 +23,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route element={<App />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/recover-password" element={<RecoverPassword />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="sign-up-confirmation" element={<SignUpConfirmation />}/>
-          <Route path="/places" element={<Places />} />
+          <Route path="/" element={<Places />} />
           <Route path="/factory-monitoring" element={ <FactoryMonitoring />} />
           <Route path="/new-measurement" element={<NewMeasurement />}/>
         </Route>
