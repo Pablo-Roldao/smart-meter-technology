@@ -13,7 +13,7 @@ const Place = (props) => {
         return (
             <>
                 <div className="form-check form-switch" key={sensor.id}>
-                    {sensor.state != 0
+                    {sensor.state !== 0
                         ? <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked onClick={sensor.state = 1}/>
                         : <input className="form-check-input bg-black" type="checkbox" role="switch" id="flexSwitchCheckChecked" />}
                     <label className="form-check-label fw-bold" htmlFor="flexSwitchCheckChecked">{sensor.name} - {sensor.value}</label>

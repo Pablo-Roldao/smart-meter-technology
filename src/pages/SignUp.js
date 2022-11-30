@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Navigate } from "react-router-dom";
-import { redirect } from "react-router-dom";
 
 import { Auth } from "aws-amplify";
 
@@ -64,12 +63,11 @@ class SignUp extends React.Component {
             });
             alert(user);
             alert("Cadastro com:" +
-            "\nName: " + this.state.name +
-            "\nE-mail: " + this.state.email +
-            "\nSenha: " + this.state.password +
-            "\nConfirmação de senha: " + this.state.passwordConfirmation);
-        event.preventDefault();
-        {true && <Navigate replace to="/sign-up-confirmation"/>}
+                "\nName: " + this.state.name +
+                "\nE-mail: " + this.state.email +
+                "\nSenha: " + this.state.password +
+                "\nConfirmação de senha: " + this.state.passwordConfirmation);
+            event.preventDefault();
         } catch (error) {
             alert("Error signing up: ", error);
         }

@@ -20,7 +20,7 @@ export class SignUpConfirmation extends Component {
 
     setCode(event) {
         this.setState({
-            code: event.target.value,
+            code: event.target.value
         });
     }
 
@@ -37,7 +37,6 @@ export class SignUpConfirmation extends Component {
     render() {
         return (
             <>
-                <div>SignUpConfirmation</div>
                 <form onSubmit={this.handleSubmmit} className="container w-75 rounded p-5">
                     <div className="text-center w-100">
                         <div className="text-center w-100">
@@ -46,8 +45,8 @@ export class SignUpConfirmation extends Component {
                             </Link>
                         </div>
                         <div id="codeInput" className="form-floating m-3">
-                            <input id="code" name="code" type="text" value={this.state.code} onChange={(event) => this.setCode(event)} className="form-control border border-dark shadow-sm" placeholder="Insira o código..." required />
-                            <label htmlFor="code" Código></label>
+                            <input id="code" name="code" type="text" value={this.state.code} onChange={(event) => this.setCode(event)} className="form-control border border-dark shadow-sm" placeholder="Insira o código enviado ao e-mail..." required />
+                            <label htmlFor="code">Código de confirmação enviado ao e-mail</label>
                         </div>
                         <div className="text-center">
                             <button type="submit" className="btn btn-outline-dark mb-3 shadow-lg">Confirmar</button>
