@@ -16,5 +16,23 @@
         "smartmetertechnology559eb3b9": {}
       }
     }
+  },
+  "smt": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smartmetertechnology-smt-155853-authRole",
+      "UnauthRoleArn": "arn:aws:iam::674809281462:role/amplify-smartmetertechnology-smt-155853-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::674809281462:role/amplify-smartmetertechnology-smt-155853-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-smartmetertechnology-smt-155853-deployment",
+      "UnauthRoleName": "amplify-smartmetertechnology-smt-155853-unauthRole",
+      "StackName": "amplify-smartmetertechnology-smt-155853",
+      "StackId": "arn:aws:cloudformation:us-west-2:674809281462:stack/amplify-smartmetertechnology-smt-155853/687a4730-70e1-11ed-83e1-0a92345f7029",
+      "AmplifyAppId": "d3fivn7lk0uk51"
+    },
+    "categories": {
+      "auth": {
+        "smartmetertechnology559eb3b9": {}
+      }
+    }
   }
 }
