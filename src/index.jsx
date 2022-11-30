@@ -10,6 +10,7 @@ import SignUp from "./pages/SignUp";
 import Places from "./pages/Places";
 import FactoryMonitoring from "./pages/FactoryMonitoring";
 import NewMeasurement from "./pages/NewMeasurement";
+import Sensors from './pages/Sensors';
 
 import "./index.css";
 
