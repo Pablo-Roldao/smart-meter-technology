@@ -19,6 +19,9 @@ I18n.putVocabularies({
     "We Texted You": "Nós mandamos uma mensagem pra você",
     "Your code is on the way. To log in, enter the code we sent you. It may take a minute to arrive.": "Seu código foi enviado para você. Para entrar, insira o código que foi enviado. Isso levará apenas um minuto e serve para a sua própria segurança.",
     "Confirm": "Confirme",
+    "We Emailed You": "Nós enviamos um e-mail para você",
+    "Your code is on the way. To log in, enter the code we emailed to": "Seu código foi enviado. Para entrar, insira o código que enviamos para ",
+    "It may take a minute to arrive.": "Vai levar apenas alguns instantes para chegar."
   }
 });
 
@@ -126,7 +129,7 @@ export default function App() {
         {({ signOut, user }) => (
           <main>
             <div className="row p-3">
-              <h3 className="col">Logado como {user.attributes.name}...</h3>
+              <h3 className="col">Logado como {user.attributes.name}</h3>
               <button onClick={signOut} className="col-2 btn btn-outline-dark">Sign out</button>
             </div>
 
