@@ -1,6 +1,7 @@
 import React from "react";
 
 //import { Outlet } from "react-router-dom";
+import Places from "./pages/Places";
 import { Link } from "react-router-dom";
 
 import { Amplify, I18n } from "aws-amplify";
@@ -120,22 +121,18 @@ const formFields = {
 }
 
 export default function App() {
+  
   return (
-    <div className="p-3">
+    <div className="">
       <Authenticator
         components={components}
         formFields={formFields}
         signUpAttributes={["name", "phone_number"]}>
         {({ signOut, user }) => (
           <main>
-            <div className="row p-3">
-              <h3 className="col">Logado como {user.attributes.name}</h3>
-              <button onClick={signOut} className="col-2 btn btn-outline-dark">Sign out</button>
+            <div id="app-container">
+              <Places name={user.attributes.name} signOutFunction={signOut}/>
             </div>
-
-            {/*<div id="app-container">
-              <Outlet />
-            </div>*/}
           </main>
         )}
       </Authenticator>
