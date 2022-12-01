@@ -1,6 +1,7 @@
 import React from "react";
 
 //import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Amplify, I18n } from "aws-amplify";
 
@@ -34,11 +35,13 @@ const components = {
 
     return (
       <View textAlign="center" padding={tokens.space.large}>
-        <Image
-          alt="SMT logo"
-          src="./images/smt-logo.png"
-          width={"50%"}
-        />
+        <Link to="/">
+          <Image
+            alt="SMT logo"
+            src="./images/smt-logo.png"
+            width={"50%"}
+          />
+        </Link>
       </View>
     );
   },
@@ -115,7 +118,7 @@ const formFields = {
 
 export default function App() {
   return (
-    <>
+    <div className="p-3">
       <Authenticator
         components={components}
         formFields={formFields}
@@ -133,6 +136,6 @@ export default function App() {
           </main>
         )}
       </Authenticator>
-    </>
+    </div>
   );
 }
