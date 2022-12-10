@@ -25,7 +25,7 @@ const Place = (props) => {
 
     return (
         <>
-            <div className="card">
+            <div className="card border border-dark">
                 <div className="card-body text-center row">
                     <Link to={"/factory-monitoring?id=" + props.placeData.id} className="card-title link-dark text-decoration-none fw-bold">{props.placeData.name}</Link>
                     <div className="col">
