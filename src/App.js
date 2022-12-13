@@ -10,6 +10,7 @@ import { Authenticator, View, useTheme, Image, Text, translations } from "@aws-a
 import "@aws-amplify/ui-react/styles.css";
 
 import awsExports from "./aws-exports";
+import SensorData from "./components/SensorData";
 Amplify.configure(awsExports);
 
 I18n.putVocabularies(translations);
@@ -132,6 +133,7 @@ export default function App() {
           <main>
             <div id="app-container">
               <Places name={user.attributes.name} signOutFunction={signOut}/>
+              <SensorData />
             </div>
           </main>
         )}
