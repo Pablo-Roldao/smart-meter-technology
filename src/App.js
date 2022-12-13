@@ -133,7 +133,7 @@ export default function App() {
           <main>
             <div id="app-container">
               <Places name={user.attributes.name} signOutFunction={signOut}/>
-              <SensorData />
+              <SensorData name="Esp32 Mikael" />
             </div>
           </main>
         )}

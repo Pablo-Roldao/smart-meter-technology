@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Button, Card, Container } from "react-bootstrap";
 
 import { Amplify, PubSub } from "aws-amplify";
 import { AWSIoTProvider } from "@aws-amplify/pubsub";
@@ -26,6 +26,7 @@ export default class SensorData extends React.Component {
           next: data => {
             try{
               this.setState({ sensorMsg: data.value });
+              alert(data.value);
             }
             catch (error){
               console.log("Error, are you sending the correct data?");
@@ -37,21 +38,19 @@ export default class SensorData extends React.Component {
       }
 
     render(){
-        const { sensorMsg } = this.state;
 
         return(
-            <div className="Sensor">
-                <Card style={{ width: '18rem' }}>
+            <Container fluid className="p-3">
+                <Card>
                     <Card.Body>
                         <Card.Title>{this.props.name}</Card.Title>
                         <Card.Text> 
                             { this.state.sensorMsg } { this.props.unit }
                         </Card.Text>
+                        <Button onClick={this.componentDidCatch} variant="dark">Executar função</Button>
                     </Card.Body>
                 </Card>
-                <style jsx>
-                </style>
-            </div>
+            </Container>
         )
     }
 }
