@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 import Place from "../components/Place";
 
@@ -37,16 +38,34 @@ const Places = (props) => {
     const placesResult = places.map((place) => {
         return (
             <>
-                <div className="container rounded d-flex justify-content-center p-3">
+                <Container className="rounded">
                     <Place placeData={place} key={place.id} />
-                </div>
-
+                </Container>
             </>
         );
     });
 
     return (
         <>
+            {/*<Navbar className="border-bottom border-dark">
+                <Container fluid>
+                    <Navbar.Brand>Bem vindo, {props.name}!</Navbar.Brand>
+                    <Navbar.Collapse className="justify-content-end">
+                        <Nav>
+                            <Nav.Item className="display-5">
+                                <Nav.Link>
+                                    Meus locais
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link>
+                                    <Button onClick={props.signOutFunction} variant="dark">Sair</Button>
+                                </Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>*/}
             <nav className="navbar p-3 border-bottom border-dark">
                 <div className="container-fluid row">
                     <div className="navbar-brand fw-bold col">Bem vindo, {props.name}!</div>
